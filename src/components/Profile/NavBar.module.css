@@ -1,0 +1,10 @@
+.navbar {
+    /* width: 100px; */
+    /* height: 90%; */
+    background-color: rgb(253, 171, 171);
+    grid-area: n;
+    text-align: start;
+}
+.navbar li {
+    list-style: none;
+}

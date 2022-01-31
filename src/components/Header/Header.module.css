@@ -1,0 +1,26 @@
+.logo {
+    height: 3vmin;
+    pointer-events: none;
+}
+
+.header {
+    background-color: #ecf1fd;
+    width: 100%;
+    /* min-height: 10vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+    grid-area: h;
+}
+
+.header-link {
+    color: #61dafb;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

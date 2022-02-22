@@ -1,21 +1,19 @@
-import classes from './NavBar.module.css';
+import { NavLink } from 'react-router-dom';
+import css from './NavBar.module.css';
+
 const NavBar = () => {
     return (
-        <nav className={classes.navbar}>
-            <ul>
-                <li>Home</li>
-                <li>Trending</li>
-                <li>Subscriptions</li>
+        <nav className={css.navbar}>
+            <ul className={css.items}>
+                <li className={css.item}><NavLink activeclassname={css.activeLink} to='/home'>Главная</NavLink></li>
+                <li className={css.item}><NavLink activeclassname={css.activeLink} to='/navigation'>Навигатор</NavLink></li>
+                <li className={css.item}><NavLink activeclassname={css.activeLink} to='/dialogs'>Dialogs</NavLink></li>
+                <li className={css.item}><NavLink activeclassname={css.activeLink} to='/short'>Shorts</NavLink></li>
+                <li className={css.item}><NavLink activeclassname={css.activeLink} to='/subsciptions'>Подписки</NavLink></li>
+                <li className={css.item}><NavLink activeclassname={css.activeLink} to='/library'>Библиотека</NavLink></li>
             </ul>
             <ul>
-                <li><a>Library</a></li>
-                <li><a>History</a></li>
-                <li><a>Watch later</a></li>
-                <li><a>Favourites</a></li>
-                <li><a>Liked videos</a></li>
-                <li><a>Music</a></li>
-                <li><a>Games</a></li>
-                <li><a>Show more</a></li>
+                <li><a href='/settings'>Settings</a></li>
             </ul>
         </nav>
     )

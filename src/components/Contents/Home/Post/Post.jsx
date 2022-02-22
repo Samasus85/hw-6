@@ -1,16 +1,18 @@
-import classes from './Post.module.css'
+import css from './Post.module.css'
 import postImg from '../../../UI/img/bella.png'
-const Post = () => {
+const Post = (props) => {
+
     return (
-        <div>
+        <div className={css.item}>
             My post
 
-            <div className={classes.post}>
-                <div className={classes.item}>
+            <div className={css.post}>
+                <div className={css.item}>
                     <img src={postImg} alt='post-img' />
-                    post 1
+                    {props.message}
                     <div>
                         <span>like</span>
+                        {props.countLikes}
                     </div>
                 </div>
             </div>

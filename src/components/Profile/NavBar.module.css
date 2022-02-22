@@ -8,3 +8,13 @@
 .navbar li {
     list-style: none;
 }
+.navbar li a {
+    color: red;
+    text-decoration: none;
+}
+.navbar .item a.active {
+    color: aqua;
+}
+/* .active {
+    color: black;
+} */
